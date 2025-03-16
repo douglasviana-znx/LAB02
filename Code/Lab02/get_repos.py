@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # Seu token de autenticação (opcional)
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = "token"
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
 
 # API do GitHub para buscar repositórios Java
