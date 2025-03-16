@@ -1,5 +1,12 @@
 # LAB02 - Projeto de Pesquisa de Repositórios GitHub
 
+
+## Colaboladores
+
+- Douglas Viana Fernandes
+- Raul Fernandes Goulart
+- Douglas Viana Fernandes
+
 ## Descrição
 
 O objetivo deste projeto é fazer uma pesquisa na API do GitHub para buscar repositórios populares na linguagem Java. A aplicação coleta informações sobre repositórios, como o nome, URL, número de estrelas, forks, data de criação, último push, tamanho e número de issues abertas. Os dados são então salvos em um arquivo CSV para análise posterior.
