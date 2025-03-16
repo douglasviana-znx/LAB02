@@ -5,7 +5,7 @@
 
 - Douglas Viana Fernandes
 - Raul Fernandes Goulart
-- Douglas Viana Fernandes
+- Henrique Povoa Peixoto
 
 ## Descrição
 
