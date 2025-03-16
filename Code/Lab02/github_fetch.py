@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 # Configuração da API do GitHub
-GITHUB_TOKEN = "token"  # Lembre-se de atualizar o token com segurança
+GITHUB_TOKEN = "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"  # Lembre-se de atualizar o token com segurança
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
 
 # Função para buscar os repositórios mais populares de Java
