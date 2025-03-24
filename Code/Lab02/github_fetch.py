@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 # API do GitHub
-GITHUB_TOKEN = "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"  # Lembre-se de atualizar o token com segurança
+GITHUB_TOKEN = "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" 
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
 
 # Função para buscar os repositórios mais populares de Java
@@ -11,10 +11,10 @@ def buscar_repositorios_java():
     repos = []
     url = "https://api.github.com/search/repositories?q=language:java&sort=stars&order=desc&per_page=100"
 
-    for page in range(1, 11):  # 10 páginas de 100 repositórios = 1000 no total
+    for page in range(1, 11):  
         print(f"Buscando página {page}...")
 
-        # Aguarda 1 segundo entre as requisições para evitar sobrecarregar a API
+       
         time.sleep(1)
         
         response = requests.get(f"{url}&page={page}", headers=HEADERS)
@@ -36,7 +36,7 @@ def buscar_repositorios_java():
 
     return repos
 
-# Buscar os dados e salvar em CSV
+
 repositorios = buscar_repositorios_java()
 if repositorios:
     df = pd.DataFrame(repositorios, columns=["Nome", "URL", "Estrelas", "Forks", "Criado", "Último Push", "Tamanho", "Issues Abertas"])
